@@ -133,7 +133,7 @@ export default function Home() {
         <div className="experience-art">
           <div className="circle-copy">15</div>
           <Image
-            src="/images/frenchieperbote-01.png"
+            src="/images/frenchieperbote-01.jpg"
             alt="Perro de Frenchieperbote descansando"
             width={1500}
             height={1125}

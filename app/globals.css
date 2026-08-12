@@ -69,7 +69,7 @@ main { overflow: hidden; }
 
 .experience { min-height: 780px; display: grid; grid-template-columns: .95fr 1.05fr; background: var(--white); border-bottom: 1.5px solid var(--line); }
 .experience-art { min-width: 0; position: relative; background: var(--yellow); border-right: 1.5px solid var(--line); overflow: hidden; }
-.experience-art img { width: 110%; height: auto; position: absolute; z-index: 2; left: -5%; bottom: -7%; }
+.experience-art img { width: 110%; height: auto; position: absolute; z-index: 2; left: -5%; bottom: -7%; mix-blend-mode: multiply; }
 .circle-copy { position: absolute; left: 4%; top: -13%; color: var(--coral); font-size: clamp(280px, 40vw, 690px); line-height: 1; font-weight: 950; letter-spacing: -.12em; }
 .experience-years { position: absolute; z-index: 3; top: 38px; left: 38px; padding: 15px 17px; background: var(--ink); color: white; font-size: 12px; line-height: 1.1; font-weight: 900; letter-spacing: .1em; }
 .experience-copy { padding: clamp(74px, 9vw, 148px) clamp(28px, 7vw, 112px); display: flex; flex-direction: column; justify-content: center; }

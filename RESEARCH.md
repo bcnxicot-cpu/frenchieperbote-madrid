@@ -22,7 +22,7 @@
 ## Imágenes
 
 - `hero-dogs.jpg`: imagen editorial original generada para esta propuesta. No representa el local ni animales concretos del negocio.
-- `frenchieperbote-01.png` y `frenchieperbote-02.png`: imágenes públicas asociadas al negocio en DogPack. Conviene confirmar su autorización antes de la entrega final.
+- `frenchieperbote-01.jpg`: imagen pública asociada al negocio en DogPack. Conviene confirmar su autorización antes de la entrega final.
 
 ## Oportunidad comercial
 
