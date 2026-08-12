@@ -68,16 +68,17 @@ main { overflow: hidden; }
 .card-cream { background: var(--white); }
 
 .experience { min-height: 780px; display: grid; grid-template-columns: .95fr 1.05fr; background: var(--white); border-bottom: 1.5px solid var(--line); }
-.experience-art { min-width: 0; position: relative; background: var(--yellow); border-right: 1.5px solid var(--line); overflow: hidden; }
-.experience-art img { width: 110%; height: auto; position: absolute; z-index: 2; left: -5%; bottom: -7%; mix-blend-mode: multiply; }
-.circle-copy { position: absolute; left: 4%; top: -13%; color: var(--coral); font-size: clamp(280px, 40vw, 690px); line-height: 1; font-weight: 950; letter-spacing: -.12em; }
-.experience-years { position: absolute; z-index: 3; top: 38px; left: 38px; padding: 15px 17px; background: var(--ink); color: white; font-size: 12px; line-height: 1.1; font-weight: 900; letter-spacing: .1em; }
+.experience-art { min-width: 0; margin: 0; position: relative; background: var(--yellow); border-right: 1.5px solid var(--line); overflow: hidden; }
+.experience-art img { object-fit: cover; object-position: center center; }
+.experience-art figcaption { position: absolute; z-index: 2; right: 26px; bottom: 26px; padding: 13px 16px; background: var(--yellow); border: 1.5px solid var(--ink); font-size: 11px; line-height: 1; font-weight: 900; letter-spacing: .12em; text-transform: uppercase; box-shadow: 5px 5px 0 var(--ink); }
 .experience-copy { padding: clamp(74px, 9vw, 148px) clamp(28px, 7vw, 112px); display: flex; flex-direction: column; justify-content: center; }
 .experience-copy > p:not(.eyebrow) { max-width: 650px; margin: 36px 0 0; font-size: clamp(18px, 1.5vw, 24px); line-height: 1.5; }
 .experience-copy .button { width: fit-content; margin-top: 38px; }
 
 .school { min-height: 900px; display: grid; grid-template-columns: .88fr 1.12fr; background: var(--ink); color: white; border-bottom: 1.5px solid var(--line); }
-.school-number { display: flex; align-items: center; justify-content: center; color: var(--blue); font-size: clamp(210px, 27vw, 520px); line-height: .7; font-weight: 950; letter-spacing: -.12em; overflow: hidden; }
+.school-number { padding: clamp(48px, 6vw, 92px); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; overflow: hidden; }
+.school-number strong { color: var(--blue); font-size: clamp(210px, 27vw, 520px); line-height: .64; font-weight: 950; letter-spacing: -.12em; }
+.school-number span { margin: clamp(40px, 5vw, 74px) 0 0 clamp(8px, 2vw, 26px); color: var(--yellow); font-size: clamp(28px, 3.2vw, 52px); line-height: .88; font-weight: 950; letter-spacing: -.05em; }
 .school-copy { padding: clamp(76px, 8vw, 132px) clamp(28px, 7vw, 110px); display: flex; flex-direction: column; justify-content: center; }
 .school-copy h2 { color: var(--yellow); font-size: clamp(53px, 5.6vw, 92px); }
 .school-lead { max-width: 620px; margin: 34px 0; font-size: clamp(19px, 1.6vw, 25px); line-height: 1.48; }
@@ -122,7 +123,8 @@ footer > p { justify-self: end; margin: 0; font-size: 11px; line-height: 1.4; le
   .service-card:last-child { border-bottom: 0; }
   .experience, .school, .reviews, .contact { grid-template-columns: 1fr; }
   .experience-art { min-height: 700px; border-right: 0; border-bottom: 1.5px solid var(--line); }
-  .school-number { min-height: 430px; font-size: 52vw; }
+  .school-number { min-height: 520px; }
+  .school-number strong { font-size: 48vw; }
   .reviews-head { border-right: 0; border-bottom: 1.5px solid var(--line); }
   .contact-ticket { max-width: 620px; }
 }
@@ -159,13 +161,14 @@ footer > p { justify-self: end; margin: 0; font-size: 11px; line-height: 1.4; le
   .service-card h3 { font-size: 32px; }
   .service-card p { font-size: 16px; }
   .experience-art { min-height: 500px; }
-  .experience-art img { width: 135%; left: -17%; bottom: 0; }
-  .circle-copy { top: -2%; font-size: 76vw; }
-  .experience-years { top: 20px; left: 20px; font-size: 11px; }
+  .experience-art img { object-position: 52% center; }
+  .experience-art figcaption { right: 18px; bottom: 18px; max-width: calc(100% - 36px); font-size: 10px; box-shadow: 4px 4px 0 var(--ink); }
   .experience-copy { padding: 76px 20px 88px; }
   .experience-copy > p:not(.eyebrow) { margin-top: 30px; font-size: 17px; }
   .experience-copy .button { width: 100%; }
-  .school-number { min-height: 310px; font-size: 55vw; }
+  .school-number { min-height: 360px; padding: 52px 20px; }
+  .school-number strong { font-size: 53vw; }
+  .school-number span { margin: 38px 0 0 7px; font-size: 33px; }
   .school-copy { padding: 76px 20px 90px; }
   .school-lead { margin: 30px 0; font-size: 18px; }
   .school li { font-size: 15px; }

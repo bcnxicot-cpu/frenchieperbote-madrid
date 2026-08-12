@@ -22,7 +22,7 @@
 ## Imágenes
 
 - `hero-dogs.jpg`: imagen editorial original generada para esta propuesta. No representa el local ni animales concretos del negocio.
-- `frenchieperbote-01.jpg`: imagen pública asociada al negocio en DogPack. Conviene confirmar su autorización antes de la entrega final.
+- `dog-grooming-portrait.jpg`: imagen editorial original generada para esta propuesta. Muestra un perro ficticio en una peluquería genérica y no representa el local ni un animal concreto del negocio.
 
 ## Oportunidad comercial
 

@@ -130,22 +130,20 @@ export default function Home() {
       </section>
 
       <section className="experience">
-        <div className="experience-art">
-          <div className="circle-copy">15</div>
+        <figure className="experience-art">
           <Image
-            src="/images/frenchieperbote-01.jpg"
-            alt="Perro de Frenchieperbote descansando"
-            width={1500}
-            height={1125}
+            src="/images/dog-grooming-portrait.jpg"
+            alt="Perro recién arreglado sobre una mesa de peluquería canina"
+            fill
             sizes="(max-width: 900px) 100vw, 48vw"
           />
-          <span className="experience-years">AÑOS<br />DE EXPERIENCIA</span>
-        </div>
+          <figcaption>15 años de peluquería canina</figcaption>
+        </figure>
         <div className="experience-copy">
-          <p className="eyebrow">EL OFICIO SE NOTA</p>
-          <h2>No hay dos mantos iguales. Tampoco dos perros.</h2>
+          <p className="eyebrow">PELUQUERÍA CANINA DESDE HACE 15 AÑOS</p>
+          <h2>No hace falta que sepas qué corte pedir.</h2>
           <p>
-            La técnica importa, pero saber mirar también: cómo llega, qué pelo tiene, qué mantenimiento puede seguir en casa y qué acabado le sienta bien.
+            Cuéntanos cómo es, qué pelo tiene y cómo lleva normalmente la peluquería. Con eso podemos orientarte antes de la cita.
           </p>
           <a className="button button-dark" href={WHATSAPP} target="_blank" rel="noreferrer">
             <ChatIcon /> Consultar una cita
@@ -154,12 +152,15 @@ export default function Home() {
       </section>
 
       <section className="school" id="formacion">
-        <div className="school-number" aria-hidden="true">200</div>
+        <div className="school-number">
+          <strong>200</strong>
+          <span>HORAS<br />PRÁCTICAS</span>
+        </div>
         <div className="school-copy">
-          <p className="eyebrow">CURSO DE PELUQUERÍA CANINA</p>
-          <h2>Aprender con las manos, no mirando desde una silla.</h2>
+          <p className="eyebrow">CURSO PRÁCTICO DE PELUQUERÍA CANINA</p>
+          <h2>El oficio se aprende haciéndolo.</h2>
           <p className="school-lead">
-            Doscientas horas prácticas para entender el trabajo, ganar seguridad y salir con una base real.
+            Un curso de 200 horas para entender el trabajo, ganar seguridad y salir con una base real.
           </p>
           <ul>
             <li><span>01</span> Práctica desde el principio</li>
@@ -191,8 +192,8 @@ export default function Home() {
       <section className="contact">
         <div className="contact-copy">
           <p className="eyebrow">ROSA PARDO, 1 · SAN FERNANDO DE HENARES</p>
-          <h2>¿Cuándo le toca?</h2>
-          <p>Escríbenos y cuéntanos qué perro tienes. Para el horario actualizado, consulta la ficha de Google.</p>
+          <h2>¿Le buscamos un hueco?</h2>
+          <p>Escríbenos con su raza, tamaño y lo que necesita. Para el horario actualizado, consulta la ficha de Google.</p>
           <div className="contact-actions">
             <a className="button button-yellow" href={WHATSAPP} target="_blank" rel="noreferrer"><ChatIcon /> Pedir cita</a>
             <a className="button button-outline" href={MAPS} target="_blank" rel="noreferrer"><PinIcon /> Cómo llegar</a>
